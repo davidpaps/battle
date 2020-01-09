@@ -1,5 +1,6 @@
 class Player
   attr_reader :name, :hitpoints, :status
+
   def initialize(name)
     @name = name
     @hitpoints = 100
