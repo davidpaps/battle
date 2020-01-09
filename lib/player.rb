@@ -1,3 +1,5 @@
+require_relative 'player'
+
 class Player
   attr_reader :name, :status
   attr_accessor :hitpoints
@@ -9,10 +11,6 @@ class Player
     @name = name
     @hitpoints = hitpoints
     @status = 'Normal'
-  end
-
-  def attack(opponent)
-    opponent.receive_damage
   end
 
   def receive_damage

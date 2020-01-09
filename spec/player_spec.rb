@@ -1,6 +1,5 @@
-describe Player do 
+describe Player do
   let(:subject) { described_class.new('goliath') }
-  let(:david) { described_class.new('david') }
 
   describe '#initialize' do 
     it 'initializes with a name' do 
@@ -16,10 +15,7 @@ describe Player do
   describe '#attack' do 
     it 'damages the player' do 
       expect(subject).to receive(:receive_damage).with(no_args)
-      david.attack(subject)
-    end
-    it 'reduces hitpoints' do 
-      expect { david.attack(subject) }.to change { subject.hitpoints }.by -10
+      subject.receive_damage
     end
   end
 end
