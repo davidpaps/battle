@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/player'
 
 class Battle < Sinatra::Base
   enable :sessions
@@ -21,10 +22,12 @@ class Battle < Sinatra::Base
     erb :play
   end
 
-  get '/attack' do 
+  get '/attack' do
+    @player_1_name = session[:player_1_name]
+    @player_2_name = session[:player_2_name]
     erb :attack
   end
-  
+
 # start the server if ruby file executed directly
   run! if app_file == $0
 end
