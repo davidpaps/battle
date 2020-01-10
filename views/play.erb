@@ -1,71 +1,11 @@
-<head>
-  <style>
-    body, table, input {
-    background-color: #353638;
-    text-align: center;
-    color:872699;
-    font-family:copperplate;
-    font-size: 30px;
-    }
-    table {
-      width: 100%;
-    }
-    input {
-      font-size: 20px;
-      border-radius: 25%;
-    }
-    h1, th {
-      font-size: 50px;
-    }
-    img {
-      width: 400px;
-    }
-    th, td {
-      width: 33.33%;
-    }
-    h2 {
-      font-size: 40px;
-    }
-  </style>
-</head>
 
-<% 
-=begin
-<h1> <%= @player_2_name %> vs. <%= @player_2_name </h1>
-<% 
-=end %>
-
-<table>
-  <%# <col width="33.33%">
-  <col width="33.33%">
-  <col width="33.33%"> %>
-  <tr>
-    <th> <%= @player_1_name %> </th>
-    <th> vs. </th>
-    <th> <%= @player_2_name %> </th>
-  </tr>
-  <tr>
-    <td><img src="/charizard.png"/></td>
-    <td> </td>
-    <td><img src="/blastoise.png"/></td>
-  </tr>
-  <tr>
-    <td><%= @player_1_name %> HP: <%= @player_1_hp %></td>
-    <td> </td>
-    <td><%= @player_2_name %> HP: <%= @player_2_hp %></td>
-  </tr>
-  <tr>
-    <td>
-      <form action = '/attack'>
-        <input type="submit" value="Attack!">
-      </form>
-    </td>
-  </tr>
-</table>
+<%= @game.player_name(1)%>  vs.  <%= @game.player_name(2) %> 
+<br>
+<%= @game.player_name(1) %> HP = <%= @game.player_hp(1) %>
+<br>
+<%= @game.player_name(2) %> HP = <%= @game.player_hp(2) %>
   
-<% 
-=begin %>
-<h2 style=text-align:right;><%= @player_1_name %> HP: <%= @player_1_hp %></h2>
-<h2 style=text-align:left;><%= @player_2_name %> HP: <%= @player_2_hp %></h2>
-<% 
-=end %>
+<form action = '/attack'>
+<input type="submit" value="Attack!">
+</form>
+     

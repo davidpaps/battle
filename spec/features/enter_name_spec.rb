@@ -2,7 +2,7 @@ feature 'enter name' do
 
   scenario 'prints a form to the page' do 
     visit('/')
-    expect(page).to have_content 'Player 1 name:'
+    expect(page).to have_content 'Player 1 Name:'
   end
 
   scenario 'enters info into the form' do 
