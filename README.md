@@ -36,12 +36,18 @@ This will display 11 passing tests with 100% coverage.
 
 ---
 
-### Homepage/Add Bookmarks
+### Homepage
 
-<img src="./images/home-add.png" />
+<img src="./images/home.png" />
 
 ---
 
-### View/Delete/Update Bookmarks
+### Fight
 
-<img src="./images/view-delete-update.png" />
+<img src="./images/fight.png" />
+
+---
+
+### Attack
+
+<img src="./images/attack.png" />
