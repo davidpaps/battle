@@ -6,13 +6,42 @@ I have left this app as it was in week 3 to serve as a progress marker and to sh
 
 **The functionality of the app:**
 
-A user can enter their name, a second user can enter their name
+A user can enter their name, a second user can enter their name, they will then progress through to the next stage to battle. The next page displays the Users who are battling - there are then corrosponding atatch buttons to reduce an opposing players HP points.
 
-Instantiate a new Docking Station
-Instantiate a new Bike
-Dock the Bike in the Docking Station
-Release the Bike from the Docking Station
-An error message will appear if the Max capacity is reached in a Docking Station and a Bike is docked
-An error message will appear if there are no Bikes to release from a Docking Station
-A user can confirm if the Bike they have released Is Working
-A user can report if a Bike is Broken
+---
+
+## How to Run
+
+Clone this repo, and in the command line navigate to the [_Battle_](battle) directory. In the command line type in:
+
+```
+bundle install
+```
+
+Once the dependancies are installed, type in the command line:
+
+```
+rackup
+```
+
+Then visit [_localhost:9292_](http://localhost:9292/) in the browser.
+
+To run the test suite (RSpec and Capybara), in the command line type:
+
+```
+rspec
+```
+
+This will display 11 passing tests with 100% coverage.
+
+---
+
+### Homepage/Add Bookmarks
+
+<img src="./images/home-add.png" />
+
+---
+
+### View/Delete/Update Bookmarks
+
+<img src="./images/view-delete-update.png" />
